@@ -12,6 +12,11 @@ function [rec_signal, out, ds, w] = domvdr_flat(wav_file)
 addpath('./utils');
 [data, fs] = audioread(wav_file);
 [nsamples, nchs] = size(data);
+
+for j = 1:nchs
+    data(:, j) = awgn(data(:, j) , 30, 'measured');
+end
+
 tdoa = zeros(1, nchs);
 
 stft_len = 512;
