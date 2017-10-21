@@ -1,6 +1,6 @@
 % given an ND tensor of size DxN1xN2xN3.., compute the outer product of the
 % first dimension independently to return DxDxN1xN2xN3...
-% Xiong Xiao
+% 
 function output = outProdND(data)
 
 [D,N1,N2,N3] = size(data);
