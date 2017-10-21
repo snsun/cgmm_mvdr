@@ -6,3 +6,4 @@ I just implement the batch process of the paper.
 
 The old verison has been moved to branch old_toy_mvdr
 
+I can't guarantee the performance. Maybe there are some bugs. If you found that , I wiil appreciate your suggestions. 
