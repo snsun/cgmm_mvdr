@@ -8,4 +8,4 @@ The old verison has been moved to branch old_toy_mvdr
 
 I can't guarantee the performance. Maybe there are some bugs. If you found that , I wiil appreciate your suggestions. 
 
-test.m gives a detailed instructions about how to run the code. 
+test.m gives a detailed instruction about how to run the code. 
