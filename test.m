@@ -9,7 +9,7 @@ M = 6; %channels number
 for i = 1:M
     wav_all(:, i) = audioread(['test_wav/test3/20G_20GO010I_STR.CH' int2str(i) '.wav']);
 end
-wav= wav_all(:, [1, 3, 4, 5, 6]);
+wav= wav_all(:, [1, 3, 4, 5, 6]); % we do not use ch2 because of bad quality
 M=5
 %% enframe and do fft
 frame_length = 400;
