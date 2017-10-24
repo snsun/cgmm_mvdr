@@ -10,5 +10,5 @@ I can't guarantee the performance. Maybe there are some bugs. If you found that 
 
 test.m gives a detailed instruction about how to run the code. 
 
-This code depends on voicebox. Doownload and add the path to your mablab. 
+This code depends on voicebox. Doownload and add the path to your matlab. 
 http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html
