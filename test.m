@@ -5,12 +5,13 @@ clc
 clear
 
 %% Load the test multi-channel test data
-M = 6; %channels number
-for i = 1:M
+I = 6; %channels number
+for i = 1:I
     wav_all(:, i) = audioread(['test_wav/test3/20G_20GO010I_STR.CH' int2str(i) '.wav']);
 end
 wav= wav_all(:, [1, 3, 4, 5, 6]); % we do not use ch2 because of bad quality
 M=5
+% You just neet to give your wav and M and repalace them here.
 %% enframe and do fft
 frame_length = 400;
 frame_shift = 160;
