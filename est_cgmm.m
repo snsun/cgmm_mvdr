@@ -59,9 +59,9 @@ for iter=1:10
         
         [V1, D1] = eig(squeeze(tmp_Ry_f));
         [V2, D2] = eig(squeeze(tmp_Rv_f));
-        entropy1 = -diag(V1, 0)/sum(diag(V1, 0)) * log(diag(V1, 0)'/sum(diag(V1, 0)));
-        entropy2 = -diag(V2, 0)/sum(diag(V2, 0)) * log(diag(V2, 0)'/sum(diag(V2, 0)));
-        
+
+        entropy1 = -diag(V1, 0)'/sum(diag(V1, 0)) * log(diag(V1, 0)/sum(diag(V1, 0)));
+        entropy2 = -diag(V2, 0)'/sum(diag(V2, 0)) * log(diag(V2, 0)/sum(diag(V2, 0)));
         if entropy1 > entropy2
             Ry(:, :, f) = tmp_Rv_f;
             Rv(:, :, f) = tmp_Ry_f;
