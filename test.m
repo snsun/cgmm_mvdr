@@ -30,7 +30,7 @@ output = zeros(T, F);    %beamforming outputs
 
 %% Get steering vectors d using eigvalue composition 
 for f= 1:F
-    [V, D] = eig(squeeze(Rx(:, :, f)));
+    [V, ~, ~] = svd(Rx(:,:,f));
     d(:, f) = V(:, 1);
 end
 %% Do MVDR beamforming
